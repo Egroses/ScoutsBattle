@@ -1,49 +1,36 @@
 # ScoutsBattle
 
-## About Game
-This is a arcade idle game.
+Yerden kütük toplayıp kamp kurulan, kampta yetişen askerlerle düşman ordularına karşı savaşılan bir arcade idle mobil oyun.
 
+![Savaş](Images/Battle.png)
 
-   Basically;
+## Neden?
 
-  - User is trying to build an army and kill the enemies.
-  
-  - User picks up the logs from the ground for the build army camp.
+Toplama, biriktirme ve harcama döngüsüne dayanan idle mekaniğini; kalabalık asker gruplarının hareketini ve birbirine ateş eden iki orduyu tek oyunda denemek için yapıldı.
 
-  - If user has enough logs for camp then starting the build camp for to train soldiers.
-  
-  - The count of trained soldier is depend the user's wood count.
-  
-  - The soldiers user have trained is shooting the enemies.
-  
-  - If enemies has any soldier, user's soldiers shoot enemy's soldier first.
-  
-  - User can see the status of enemies from the leaderboard.
-  
+## Oynanış
 
- Navmesh Agent, Dotween, Joystick System and Event System are used.
+- Oyuncu joystick ile dolaşıp yerdeki kütükleri topluyor, kütükler sırtında yığın olarak taşınıyor.
+- Yeterli kütük toplanınca kamp kuruluyor ve kampta asker yetişmeye başlıyor.
+- Yetişen asker sayısı getirilen odun miktarına bağlı.
+- Askerler düşmanlara ateş ediyor. Düşmanın askerleri varsa önce onları hedefliyor.
+- Düşman ordularının durumu lider tablosunda görülüyor.
 
- You can see images from game.
+## Ekranlar
 
-## Images From the Game
+| Asker yetiştirme | Lider tablosu |
+|---|---|
+| ![Asker yetiştirme](Images/Recruiting.png) | ![Lider tablosu](Images/LeaderBoard.png) |
+| **Ölen askerler** | **Toplama efekti** |
+| ![Ölen askerler](Images/DeadSoldiers.png) | ![Toplama efekti](Images/Lerp.png) |
+| **Kazanma** | **Tekrar dene** |
+| ![Kazanma](Images/Win.png) | ![Tekrar dene](Images/TryAgain.png) |
 
-**Battle**\
-![battle picture](https://github.com/Egroses/ScoutsBattle/blob/main/Images/Battle.png)
+## Teknik
 
-**Leaderboard**\
-![leaderboard picture](https://github.com/Egroses/ScoutsBattle/blob/main/Images/LeaderBoard.png)
-
-**Dead Soldiers**\
-![dead soldiers picture](https://github.com/Egroses/ScoutsBattle/blob/main/Images/DeadSoldiers.png)
-
-**Recruiting**\
-![recruiting picture](https://github.com/Egroses/ScoutsBattle/blob/main/Images/Recruiting.png)
-
-**Lerp Effect**\
-![lerp effect picture](https://github.com/Egroses/ScoutsBattle/blob/main/Images/Lerp.png)
-
-**Try Again**\
-![try again picture](https://github.com/Egroses/ScoutsBattle/blob/main/Images/TryAgain.png)
-
-**Win**\
-![win picture](https://github.com/Egroses/ScoutsBattle/blob/main/Images/Win.png)
+| | |
+|---|---|
+| **Motor** | Unity 2022.1.7f1 |
+| **Kullanılanlar** | NavMesh Agent, DOTween, Cinemachine, joystick, olay sistemi, nesne havuzu |
+| **Kod** | `Assets/Codes` (karakter, toplama, düşman, asker, yöneticiler) |
+| **GitHub'a yükleme** | Mart 2023 |
